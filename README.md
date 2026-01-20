@@ -18,39 +18,40 @@ Manajemen User & Role: Membuat user baru dan memberikan hak akses database secar
 
 Sebelum menjalankan skrip, pastikan sistem Anda memenuhi kriteria berikut:
 
-OS: Ubuntu (20.04+) atau Debian (11+).
+`OS: Ubuntu (20.04+) atau Debian (11+).`
 
 Izin: Akses Root atau sudo.
 
 Database: PostgreSQL harus sudah terinstal di server.
 
-🛠️ Mulai Penggunaan
+# 🛠️ Mulai Penggunaan
 
 1. Instalasi
 
 Unduh skrip langsung menggunakan wget:
 
-wget [https://raw.githubusercontent.com/username/repository/main/pg_tuner_pro.sh](https://raw.githubusercontent.com/username/repository/main/pg_tuner_pro.sh)
+`wget [https://raw.githubusercontent.com/username/repository/main/pg_tuner_pro.sh](https://raw.githubusercontent.com/username/repository/main/pg_tuner_pro.sh)`
 
 
 2. Izin Eksekusi
 
 Berikan izin eksekusi pada skrip:
 
-chmod +x pg_tuner_pro.sh
+`chmod +x pg_tuner_pro.sh`
 
 
 3. Eksekusi
 
 Jalankan skrip dengan hak akses sudo:
 
-sudo ./pg_tuner_pro.sh
+`sudo ./pg_tuner_pro.sh`
 
 
-🔍 Input & Logika Tuning
+# 🔍 Input & Logika Tuning
 
 Selama eksekusi, skrip akan meminta informasi berikut:
 
+```
 Input
 
 Deskripsi
@@ -88,8 +89,9 @@ Effective Cache Size: Diatur ke 75% dari total RAM.
 Work Mem: Dihitung dalam satuan KB per koneksi untuk mencegah Out Of Memory (OOM).
 
 I/O Costs: Dioptimalkan pada 1.1 untuk SSD atau 4.0 untuk HDD.
+```
 
-⚠️ Catatan Penting
+# ⚠️ Catatan Penting
 
 [!IMPORTANT]
 Restart Layanan: Skrip ini akan merestart layanan PostgreSQL untuk menerapkan perubahan. Hindari menjalankan skrip ini saat jam sibuk trafik.
@@ -98,7 +100,7 @@ Backups: File cadangan dibuat secara otomatis dengan stempel waktu (contoh: post
 
 Connection Pooling: Jika jumlah koneksi concurrent Anda di atas 500, sangat disarankan untuk mengaktifkan opsi PgBouncer.
 
-📄 Lisensi
+# 📄 Lisensi
 
 Proyek ini dilisensikan di bawah Lisensi MIT.
 

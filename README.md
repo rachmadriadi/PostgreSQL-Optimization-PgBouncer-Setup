@@ -1,8 +1,8 @@
-PostgreSQL Tuner Pro (Enterprise Edition) 🚀
+# PostgreSQL Tuner Pro (Enterprise Edition) 🚀
 
 pg_tuner_pro.sh adalah alat otomatisasi berbasis Bash yang dirancang untuk mengoptimalkan performa database PostgreSQL secara instan. Alat ini menyesuaikan konfigurasi database berdasarkan spesifikasi hardware (RAM, CPU, Disk) dan beban koneksi Anda.
 
-🌟 Fitur Utama
+# 🌟 Fitur Utama
 
 Tuning Hardware Otomatis: Menghitung parameter memori optimal (Shared Buffers, Work Mem, dll.) berdasarkan kapasitas RAM dan CPU server.
 
@@ -14,7 +14,7 @@ Monitoring Terintegrasi: Mengaktifkan ekstensi pg_stat_statements untuk pelacaka
 
 Manajemen User & Role: Membuat user baru dan memberikan hak akses database secara interaktif.
 
-📋 Prasyarat
+# 📋 Prasyarat
 
 Sebelum menjalankan skrip, pastikan sistem Anda memenuhi kriteria berikut:
 
